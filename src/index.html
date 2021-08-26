@@ -6,9 +6,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    /* Esto es un comentario?
-    /* Esto es un holiiiii
-    /* Este es otro comentario
+    
+      <!-- Pagina uno -->
+      <div id="screen1" class= "container">
+        <h1>REVISA TU GIFT CARD</h1>
+        <h3>Válida incluso en compras online</h3>
+       <form action="">
+        <input type="number" id="cardNumbers" maxlength="16" minlength="15" placeholder="Ingresa tu número de gift card" required/><br>
+        </form>
+        <button onclick="funcion luhn"> Comprobar </button>
+        </div>
+  
+  
+  
+        <!-- Pagina dos -->
+      <div id="screen2" class="container">
+        <h3>Tu tarjeta es válida</h3>
+        <h6> tu tarjeta gift card</h6>
+        <h6> retorno XXXX XXXX XXXX 0000</h6>
+        <h6> vigente hasta:</h6> 
+        <h6> 30/12/2025:</h6>
+        <h6> Tu saldo es:</h6>
+        <h6> $100000</h6>       
+  
+        <button onclick="volveralinicio"> Revisar otra Tarjeta</button> 
+      </div>
+  
+        <!-- Pagina tres -->
+      <div id="screen3" class="container">
+        <h3>Tu tarjeta es inválida</h3>
+        <h6> tu tarjeta gift card</h6>
+        <h6> retorno XXXX XXXX XXXX 0000</h6>
+        <h6> vigente hasta:</h6> 
+        <h6> tarjeta inválida</h6>
+        <h6> Tu saldo es:</h6>
+        <h6> tarjeta inválida</h6> 
+  
+        <button onclick="volveralinicio"> Revisar otra Tarjeta</button>
+      </div>
+  
+  
     <header></header>
     <main></main>
     <footer></footer>
