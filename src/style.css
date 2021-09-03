@@ -22,3 +22,15 @@ background-color: #dcdcdc;
   margin: 50px;
 
 }
+
+#screen1 {
+  display: show;
+}
+
+#screen2 {
+  display: none;
+}
+
+#screen3 {
+  display: none;
+}
