@@ -1,43 +1,44 @@
 import validator from './validator.js';
 
-//obtener valor del input
-let input =  document.getElementById('cardNumbers').value;
-//restringir tipo de caracteres en input
-//=/[^a-z ]\ *([.0-9])*\d/g
-//=/^([\d])+$/
-function correctInput {
-  let smallTest = new RegExp("^[0-9]{16}$");
-  if (!smallTest.test(input))
-  return "intenta reingresar el número de tarjeta";
+/* crear una variable que llame el click del html, y que despues de eso creamos la funcion.
+cambiar nuestro tipo de funcion, a una funcion arrow. revisar readme de laboratoria. revisar objetipos de tipo modulo
+*/
+
+function getVal() {
+  let input =  document.getElementById('digits').value;
+  console.log(input);
+  //podemos ver los numeros del input en la consola
+  if //(input.value.length < 16){
+    (input.length<16) {
+        /*let filter = '1234567890'; //nuestro filtro de numeros validos
+        let out = '';
+          for (let input = 0; input<input.length; input++);
+              if (filter.indexOf(input.charAt(input)) != -1)
+              out += input.charAt(input);
+              return out;
+              console.log(out);
+              } */
+    return alert("Reingrese su número de tarjeta, sin espacios, guiones");
+  }
+  else {
+    return validator();
+    // correr funcion de cardvalidator.js
+
+  }
 }
-console.log(
-  smallTest.test(input)
-);
 
-//comprobacion de luhn
-let input = document.getElementById('digits').value;
-let digitsTrue = Array.from(input);
-console.log(digitsTrue);// ["s", "o", "y", "l", "e", "n", "i", "n"]//pasar de string a un array
-
-digitsTrue.reverse();//pasar a orden inverso
-
-digitsTrue [1,3,5,7,9,11,13,15]*2;//multiplicar por dos, las posiciones 'pares'
-
-//a digitos mayores de 9, restarle 9, porque es lo mismo mind explodes
-if(digito > 9) {
-digitofinal = digito - 9;
-}
-
-//sumar todo
-
-//dividir por 10
-if(sumafinal % 10 === 0){
-    validCard = true;
- }
-
-
-
-
-
-
-console.log(validator);
+/*$.getscript("url or name of 1st Js File",function(){
+fn();
+});/*
+/*
+  //ahora toca el if para limitar los caracteres
+  //para limitar regexp = /^([\d])+$/;
+  //para limitar rexexp = /[^a-z ]\ *([.0-9])*\d/g
+  //si el if es true
+    //entonces invocar y correr el validador
+        //Si el residuo es 0 mostrar ventana de validador
+        //document.getElementById('#screen2').style.display = "block"
+        //Si el residuo no es 0 mostrar ventana invalida
+        //document.getElementById('#screen3').style.display = "block"
+  //si el if es false,
+    //entonces return intenta "reingresar el número de tarjeta"} */

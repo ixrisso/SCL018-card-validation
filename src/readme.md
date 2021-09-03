@@ -15,5 +15,4 @@ Siguiente a eso trabajos en el html, css y su funcionalidad.
 ![paginafigma02](https://imgur.com/FMrcvfE)
 ![paginafigma03](https://imgur.com/L59BKt8)
 
-Flujo de cosas
-insertar imagen de mireya
+Flujo de cosas insertar (imagen de mireya)
