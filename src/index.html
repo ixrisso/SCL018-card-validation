@@ -15,7 +15,8 @@
      <form action="">
 	    <input type="text" id="digits" maxlength="16" minlength="14" placeholder="XXXX-XXXX-XXXX" required/><br>
       </form>
-      <button onclick="getVal()" id="step1"> Comprobar </button>
+      <button id="step1"> Comprobar </button>
+      <h5 id="wrong"> </h5>
       </div>
 
 
@@ -46,8 +47,8 @@
       <button onclick="volveralinicio"> Revisar otra Tarjeta</button>
     </div>
 
-    <script src="validator.js"></script>
-    <script src="index.js"></script>
-     <!-- Se supone que así se enlaza la función del cardvalidator :D -->
+  
+    <script type="module" src="index.js" ></script>
+   
   </body>
 </html>
