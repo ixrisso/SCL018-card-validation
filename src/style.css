@@ -1,26 +1,41 @@
 body {
 background-color: #dcdcdc;
+font-family: 'Roboto Condensed', 'Helvetica Neue',Helvetiva, Arias, sans-serif;
 }
-
-/*Intento numero 01 de fondo centrado blanco
-#box {
-  background-color: #fff;
-  border-radius: 55px;
-  width: 600px;
-  height: 600px;
-  padding: 76px;
-  margin: 50px;
-
-}*/
 
 .container {
   background-color: #fff;
   border-radius: 55px;
-  width: 500px;
-  height: 500px;
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 400px;
+  max-height: 60vh;
   padding: 76px;
-  margin: 50px;
+  margin: center;
+}
 
+h1 {
+  font-style: normal;
+  font-weight:bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+h3 {
+  background: #D50032;
+  border-radius: 13px;
+  height: 36px;
+  width: 348px;
+  color: #fff;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
 }
 
 #screen1 {
