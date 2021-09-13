@@ -1,5 +1,4 @@
 import {validator} from './validator.js';
-
 document.getElementById('step1').onclick = function() {getVal() };
 
 function getVal() {
