@@ -18,23 +18,23 @@ isValid: function(creditCardNumber) {
       return true;
     } else { return false;
   }
-  console.log(isValid)
+  //console.log(isValid)
 },
 
 maskify: function(creditCardNumber) {
       let fourSaved = creditCardNumber.slice(-4) // numero negativo hace que parta por la derecha. Conservar los ultimos 4 digitos
       const cCardNumberArr = creditCardNumber.split(", ") //de string a array para manipulacion mas facil?
       for(let i = 0; i < cCardNumberArr.length; i++){
-      cCardNumberArr[i] =cCardNumberArr[i].replace(/[0-9]/g, '#') //cada elemento del array es un #
-        }
+      cCardNumberArr[i] =cCardNumberArr[i].replace(/[A-Za-z0-9]/g, '#') //cada elemento del array es un #
+      }
       let cCardNumberStr = cCardNumberArr.join(''); //convirtiendo otra vez el array a string
       let masked = cCardNumberStr.slice(0, -4) + fourSaved;
-      console.log(maskify)
+      //console.log(maskify)
       return masked
       }
 
-}
+};
 
 
 
-export {validator} ;
+export default validator;
