@@ -1,6 +1,6 @@
 const validator = {
 
-isValid: function(creditCardNumber) {
+isValid: function (creditCardNumber) {
   let charStr = creditCardNumber.toString().split('');//se separan los caracteres
   let digits = charStr.map(Number)//se convierten a numeros
               //console.log(digits);
@@ -18,7 +18,7 @@ isValid: function(creditCardNumber) {
       return true;
     } else { return false;
   }
-  //console.log(isValid)
+
 },
 
 maskify: function(creditCardNumber) {
