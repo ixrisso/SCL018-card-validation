@@ -1,6 +1,6 @@
 const validator = {
 
-isValid: function(creditCardNumber) {
+isValid: function (creditCardNumber) {
   let charStr = creditCardNumber.toString().split('');//se separan los caracteres
   let digits = charStr.map(Number)//se convierten a numeros
               //console.log(digits);
@@ -18,8 +18,7 @@ isValid: function(creditCardNumber) {
       return true;
     } else { return false;
   }
-  console.log(isValid)
-},
+}
 
 maskify: function(creditCardNumber) {
       let fourSaved = creditCardNumber.slice(-4) // numero negativo hace que parta por la derecha. Conservar los ultimos 4 digitos
@@ -37,4 +36,4 @@ maskify: function(creditCardNumber) {
 
 
 
-export {validator} ;
+export default validator;

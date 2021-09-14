@@ -1,19 +1,17 @@
-import {validator} from './validator.js';
+import validator from './validator.js';
 
-document.getElementById("step1").addEventListener("click", getVal);
-let input =  document.getElementById('digits').value;
+document.getElementById("step1").addEventListener("click", function() {
+let creditCardNumber =  document.getElementById('digits').value;
+if (creditCardNumber === ""){
+  return document.getElementById("wrong").innerHTML = "Reingrese su número de tarjeta sin espacios ni carácteres especiales";
+} else {
+  if (validator.isValid(creditCardNumber)===true) {
+  return document.getElementById("wrong").innerHTML = "Tarjeta Valida";
+} else { return document.getElementById("wrong").innerHTML = "Tarjeta Invalida";} 
+}
+  
+})
 
-function getVal(input) {
-  if (input == null) {
-      return document.getElementById("wrong").innerHTML = "Reingrese su número de tarjeta sin espacios ni carácteres especiales";
-    } else  {
-      let result = input.maskify;
-
-      maskify(input);
-      isValid(input);
-      return "estoy listo";
-    }
-  }
 
   //console.log(input); //podemos ver los numeros del input en la consola
   //if (input == null) {
