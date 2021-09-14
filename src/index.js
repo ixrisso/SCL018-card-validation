@@ -1,25 +1,31 @@
-import {isValid} from './validator.js';
+import {validator} from './validator.js';
 
-document.getElementById('step1').onclick = function() {getVal() };
+document.getElementById("step1").addEventListener("click", getVal);
+let input =  document.getElementById('digits').value;
 
-function getVal() {
-  let input =  document.getElementById('digits').value;
-  console.log(input); //podemos ver los numeros del input en la consola
+function getVal(input) {
+  if (input == null) {
+      return document.getElementById("wrong").innerHTML = "Reingrese su número de tarjeta sin espacios ni carácteres especiales";
+    } else  {
+      let result = input.maskify;
 
-  if (input.length<16 || input == null) {
-        /*let filter = '1234567890'; //nuestro filtro de numeros validos
-        let out = '';
-          for (let input = 0; input<input.length; input++);
-              if (filter.indexOf(input.charAt(input)) != -1)
-              out += input.charAt(input);
-              return out;
-              console.log(out);
-              } */
-    return document.getElementById("wrong").innerHTML = "Reingrese su número de tarjeta sin espacios ni carácteres especiales";
-  } else {
-  return isValid(input);
-}
-}
+      maskify(input);
+      isValid(input);
+      return "estoy listo";
+    }
+  }
+
+  //console.log(input); //podemos ver los numeros del input en la consola
+  //if (input == null) {
+  //  return document.getElementById("wrong").innerHTML = "Reingrese su número de tarjeta sin espacios ni carácteres especiales";
+  //} else {
+  //document.getElementById("screen2").style.display = "block"
+  //document.getElementById("screen1").style.display = "none"
+
+
+
+
+//}
 
 //return validator(); correr funcion de cardvalidator.js
  /*

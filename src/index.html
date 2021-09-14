@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Card Validator</title>
+    <title>Card Validator Mire-Isa</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" />
   </head>
   <body>
 
       <!-- Pagina uno -->
     <div id="screen1" class= "container">
-      <h1>REVISA TU GIFT CARD</h1>
-	    <h3>Válida incluso en compras online</h3>
+      <img src="https://casaideas.cl/media/logo/stores/1/logo_casaideas_4x.png" alt="logocasaideas" style="display:block;margin:auto;width:50%;">
+
+      <h1>REVISA TU CARD</h1>
+	    <h3>Ingresa tu número de Gift Card</h3>
      <form action="">
-	    <input type="text" id="digits" maxlength="16" minlength="14" placeholder="XXXX-XXXX-XXXX" required/><br>
+	    <input type="text" id="digits" maxlength="16" minlength="15" placeholder="XXXX-XXXX-XXXX" required/><br>
       </form>
-      <button id="step1"> Comprobar </button>
+      <button class="btn" id="step1"> Comprobar </button>
       <h5 id="wrong"> </h5>
       </div>
 
@@ -23,32 +27,33 @@
 
       <!-- Pagina dos -->
     <div id="screen2" class="container">
-      <h3>Tu tarjeta es válida</h3>
+      <img src="https://casaideas.cl/media/logo/stores/1/logo_casaideas_4x.png" alt="logocasaideas" style="display:block;margin:auto;width:50%;">
+      <h3 id="cardValidness">Tu tarjeta es válida</h3>
       <h6> tu tarjeta gift card</h6>
-      <h6> retorno XXXX XXXX XXXX 0000</h6>
+      <h6 class="maskify"> </h6>
       <h6> vigente hasta:</h6>
       <h6> 30/12/2025:</h6>
       <h6> Tu saldo es:</h6>
       <h6> $100000</h6>
 
-      <button onclick="volveralinicio"> Revisar otra Tarjeta</button>
+      <button class="btn" onclick="volveralinicio"> Revisar otra Tarjeta</button>
     </div>
 
       <!-- Pagina tres -->
     <div id="screen3" class="container">
       <h3>Tu tarjeta es inválida</h3>
       <h6> tu tarjeta gift card</h6>
-      <h6> retorno XXXX XXXX XXXX 0000</h6>
+      <h6 class="maskify"> retorno XXXX XXXX XXXX 0000</h6>
       <h6> vigente hasta:</h6>
       <h6> tarjeta inválida</h6>
       <h6> Tu saldo es:</h6>
       <h6> tarjeta inválida</h6>
 
-      <button onclick="volveralinicio"> Revisar otra Tarjeta</button>
+      <button class="btn" onclick="volveralinicio"> Revisar otra Tarjeta</button>
     </div>
 
 
-    <script type="module" src="index.js" ></script>
+    <script src="index.js" type="module"></script>
 
   </body>
 </html>
