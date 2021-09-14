@@ -8,15 +8,17 @@ Nuestro validador de Gift Card tiene como objetivo el comprobar la validez de un
 Antes de comenzar a trabajar de lleno en JS, HTML y CSS para ir materializando nuestro proyecto, decidimos organizarnos y tener claros los pasos a seguir, siempre desmenuzando lo más posible cada tarea a ejecutar.
 Nuestro aclarador y visualizador principal de tareas fue Trello.
 Luego de tener nuestros objetivos, realizamos bocetos sobre la aplicación conversando y tomando en cuenta los requisitos del cliente, siempre considerando sus necesidades y cómo resolverlas a través del proyecto, lo cual logramos concretar en Figma como prototipo inicial.
+![diagramadeflujo](https://imgur.com/ZfCL3P9)
 A continuación, a través del diagrama de flujo, fuimos capaces de entender todos los pasos que debíamos exponer en nuestro código para que este fuese funcional.
 Finalmente y siguiendo nuestros "bocetos" anteriores, es que entramos de lleno a trabajar en HTML, CSS y JavaScript, intentando siempre no ir en cadena con cada avance que nos proponíamos obtener.
 
 ## Tomando forma
 ![boceto](https://imgur.com/yHEVOMu)
+![diagramadeflujo](https://imgur.com/ZfCL3P9)
 ![paginafigma01](https://imgur.com/tg9GleE)
 ![paginafigma02](https://imgur.com/FMrcvfE)
 ![paginafigma03](https://imgur.com/L59BKt8)
-![diagramadeflujo](https://imgur.com/ZfCL3P9)
+
 
 ## Nuestro Código
 
