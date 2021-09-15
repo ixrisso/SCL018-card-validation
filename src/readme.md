@@ -1,28 +1,29 @@
-# Bienvenid@s a validador de Gift Card "Casa&Ideas"
+# Bienvenid@s a validador de Gift Card "CasaIdeas"
 
 ## Nuestro proyecto
-Nuestro validador de Gift Card tiene como objetivo el comprobar la validez de una gift card para compras en Casa&Ideas, ya que nuestro cliente busca que sus trabajadores comprueben la validez de tal que les ha otorgado el sindicato.
+Nuestro validador de Gift Card tiene como objetivo el comprobar la validez de una gift card para compras en la empresa CasaIdeas, ya que nuestro cliente espera que sus trabajadores comprueben la validez del beneficio que les ha otorgado el sindicato.
+
+## Producto final 📦
+
+[Visualización del producto final](https://imgur.com/a/8zKmBho)
+
+## Pasos previos 🚀
+
+### Investigación UX 
+
+1. Los usuarios de nuestro producto son los trabajadores quienes a través de un sindicato han conseguido una Gift Card a la tienda CasaIdeas y su principal problema es averiguar los datos puntuales de dicha tarjeta.
+2. Nuestro producto soluciona una duda antes de ir a comprar. Cuando uno obtiene una tarjeta gift card, no la suele usar de inmediato ni sabe cuánto saldo o fecha de validez tiene.
+3. Nuestro primero prototipo en papel fue el [siguiente](https://imgur.com/yHEVOMu)
+4. El feedback que recibimos nos permitió mantener un estilo minimalista. Nos estábamos basando en la tienda Casa&ideas, así que debíamos copiar el estilo gráfico de este.
+5. Nuestro prototipo de alta fidelidad fue el siguiente [Pantalla 1](https://imgur.com/tg9GleE)|[Pantalla 2](https://imgur.com/FMrcvfE)
+6. Durante el desarrollo nos dimos cuenta que estábamos complicándonos en cosas que nos entrampaban el desarrollo del código en sí (y que no aportaban a los requisitos principales), por lo que decidimos simplificar nuestro producto.
+7. Imagen final de producto a una sola pantalla
+Nuestro aclarador y visualizador principal de tareas fue en primera instancia un [Diagrama de flujo](https://imgur.com/ZfCL3P9)  y gracias a este, pudimos materializar el paso a paso en [Trello](https://trello.com/b/VjAJ2s05/card-validator-mire-isa).
 
 
-## Pasos iniciales 🚀
-Antes de comenzar a trabajar de lleno en JS, HTML y CSS para ir materializando nuestro proyecto, decidimos organizarnos y tener claros los pasos a seguir, siempre desmenuzando lo más posible cada tarea a ejecutar.
-Nuestro aclarador y visualizador principal de tareas fue Trello.
-Luego de tener nuestros objetivos, realizamos bocetos sobre la aplicación conversando y tomando en cuenta los requisitos del cliente, siempre considerando sus necesidades y cómo resolverlas a través del proyecto, lo cual logramos concretar en Figma como prototipo inicial.
-A continuación, a través del diagrama de flujo, fuimos capaces de entender todos los pasos que debíamos exponer en nuestro código para que este fuese funcional.
-Finalmente y siguiendo nuestros "bocetos" anteriores, es que entramos de lleno a trabajar en HTML, CSS y JavaScript, intentando siempre no ir en cadena con cada avance que nos proponíamos obtener.
+## Nuestro Código 🛠️
 
-## Tomando forma 🛠️
-
-A continuación puedes encontrar las imágenes del boceto, prototipo y diagrama de flujo de nuestro proyecto
-
-Boceto ![boceto](https://imgur.com/yHEVOMu)
-Prototipo en Figma
-![paginafigma01](https://imgur.com/tg9GleE)
-![paginafigma02](https://imgur.com/FMrcvfE)
-![paginafigma03](https://imgur.com/L59BKt8)
-Diagrama de flujo ![diagramadeflujo](https://imgur.com/ZfCL3P9)
-
-## Nuestro Código
+A continuación se muestra el desarrollo lógico que permitió la materialización en el código de nuestro producto.
 
 ### HTML e index.js
 1. Adquirir input mediante función `getVal`
@@ -51,3 +52,11 @@ En `maskify`:
 4. Reemplazar cada digito con # (a excepción de los últimos 4)
 5. Convertir el array a string
 6. Sumar string con números reservados
+
+### Visualización de nuestro código en JS (anterior al Test primario)
+
+- [Visualización index.js](https://imgur.com/a/gXdtAW3)
+- [Visualización validator.js](https://imgur.com/a/qzO3tCu)
+- [Visualización Test unitario fallido](https://imgur.com/a/1pmpEiF)
+
+#### [Test unitario validado](https://imgur.com/a/KOqQqI6)

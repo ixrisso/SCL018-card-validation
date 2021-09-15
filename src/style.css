@@ -89,15 +89,3 @@ transform: translate(-50%, -50%);
     color: #333333;
   }
 
-
-#screen1 {
-  display: show;
-}
-
-#screen2 {
-  display: none;
-}
-
-#screen3 {
-  display: none;
-}
