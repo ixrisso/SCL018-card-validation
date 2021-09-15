@@ -8,7 +8,7 @@ if (creditCardNumber === ""){
 } else {
   if (validator.isValid(creditCardNumber)===true) {
   return document.getElementById("print").innerHTML = "Tu tarjeta N° " + maskified + " es válida";
-} else { return document.getElementById("print").innerHTML = "Tu tarjeta N° " + maskified + " es inválida. Reingresa nuevamente";}
+} else { return document.getElementById("print").innerHTML = "Tu tarjeta N° " + maskified + " es inválida. Intenta nuevamente";}
 }
 
 })
