@@ -12,11 +12,6 @@ isValid: function (creditCardNumber) {
         }
     }
     let total = digits.reduce((a,b)=>a + b);
-
-        if (digits[i] > 9) { digits[i] = digits[i] - 9; }
-        }
-    }
-    let total = digits.reduce((a,b)=>a + b);
     if (total % 10 == 0){
       return true;
     } else { return false;
@@ -31,14 +26,6 @@ maskify: function(creditCardNumber) {
       cCardNumberArr[i] =cCardNumberArr[i].replace(/[A-Za-z0-9]/g, '#')
       }
       let cCardNumberStr = cCardNumberArr.join(''); 
-      let masked = cCardNumberStr.slice(0, -4) + fourSaved;
-
-      let fourSaved = creditCardNumber.slice(-4)
-      const cCardNumberArr = creditCardNumber.split(", ")
-      for(let i = 0; i < cCardNumberArr.length; i++){
-      cCardNumberArr[i] =cCardNumberArr[i].replace(/[A-Za-z0-9]/g, '#')
-      }
-      let cCardNumberStr = cCardNumberArr.join('');
       let masked = cCardNumberStr.slice(0, -4) + fourSaved;
       return masked
       }
