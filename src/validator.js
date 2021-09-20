@@ -12,6 +12,7 @@ isValid: function (creditCardNumber) {
         }
     }
     let total = digits.reduce((a,b)=>a + b);
+  
     if (total % 10 == 0){
       return true;
     } else { return false;
@@ -19,7 +20,7 @@ isValid: function (creditCardNumber) {
 
 },
 
-maskify: function(creditCardNumber) {
+maskify: function (creditCardNumber) {
       let fourSaved = creditCardNumber.slice(-4) 
       const cCardNumberArr = creditCardNumber.split(", ") 
       for(let i = 0; i < cCardNumberArr.length; i++){
@@ -27,6 +28,7 @@ maskify: function(creditCardNumber) {
       }
       let cCardNumberStr = cCardNumberArr.join(''); 
       let masked = cCardNumberStr.slice(0, -4) + fourSaved;
+  
       return masked
       }
 
