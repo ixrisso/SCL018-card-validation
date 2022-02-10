@@ -5,7 +5,7 @@ Nuestro validador de Gift Card tiene como objetivo el comprobar la validez de un
 
 ## Producto final 📦
 
-[Visualización del producto final](https://imgur.com/a/8zKmBho)
+[Visualización del producto final](https://ixrisso.github.io/SCL018-card-validation/)
 
 ## Pasos previos 🚀
 
